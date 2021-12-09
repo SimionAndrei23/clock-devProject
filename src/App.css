@@ -398,17 +398,6 @@ header
   scrollbar-width: none;  /* Firefox */
 } 
 
-
-.alarmUP {
-  display: flex;
-  align-items: center;
-  
-  /*border-top: 1px solid rgba(0,0,0,0.03);*/
-  border-top: 1px solid rgb(241, 228, 238);
-  border-bottom: 1px solid rgb(241, 228, 238);
-  padding: 12px 0;
-}
-
 .alarmNotification span {
   display: inline;
   font-weight: 700;
@@ -418,19 +407,29 @@ header
   -webkit-text-fill-color: transparent;
 }
 
-.alarmTime {
-  flex: 1;
-}
-.alarmTime > h2 {
-  text-shadow: 2px 0px 0px #f39fdc;
-  text-align: center;
-  width: 8rem;
+.alarmUP {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100px 1fr;
+  border-top: 1px solid rgb(241, 228, 238);
+  padding: 12px 0;
 }
 
-.alarmTime > p {
-  color: #000;
-  opacity: 0.5;
+.alarmTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.alarmTime > h2 {
+  text-shadow: 1px 1px 0px #f39fdc;
+}
+
+label {
+  justify-self: end;
+}
+
+
 
 .check {
   position: relative;
