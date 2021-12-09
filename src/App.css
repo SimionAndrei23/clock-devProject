@@ -19,7 +19,7 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  background: url('./Files/timeBackground.jpg');
+  background: url('./files/timeBackground.jpg');
   background-size: cover;
   background-position: center;
 }
